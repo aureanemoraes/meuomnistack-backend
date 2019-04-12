@@ -33,4 +33,4 @@ app.use('/files', express.static(path.resolve(__dirname, "..", "tmp"))) // defin
 app.use(require("./routes")); // importar arquivo de rotas
 
 //app.listen(3333);
-server.listen(3333);
+server.listen(process.env.PORT || 3333);

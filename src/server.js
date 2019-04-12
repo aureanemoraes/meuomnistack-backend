@@ -7,7 +7,7 @@ const cors = require("cors");
 
 const app = express();
 app.use(cors()); // dessa forma está deixando livre para qqualquer um acessar ; é possivel limitar o acesso
-const server = http().Server(app); 
+const server = http.Server(app); 
 const io = socketio(server);
 
 io.on("connection", socket => {
